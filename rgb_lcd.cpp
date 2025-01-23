@@ -71,6 +71,7 @@ void rgb_lcd::begin(uint8_t cols, uint8_t lines, uint8_t dotsize, TwoWire &wire)
 
     _wire = &wire;
     _wire->begin();
+    _initialized = 1;
 
     if (lines > 1) {
         _displayfunction |= LCD_2LINE;
@@ -142,8 +143,6 @@ void rgb_lcd::begin(uint8_t cols, uint8_t lines, uint8_t dotsize, TwoWire &wire)
     }
 
     setColorWhite();
-
-    _initialized = 1;
 }
 
 /********** high level commands, for the user! */
