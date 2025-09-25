@@ -1,4 +1,4 @@
-### Example in C
+### Example in C for stm32
 
 In your main.c:
 
