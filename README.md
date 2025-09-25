@@ -15,6 +15,32 @@ In your main.c:
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Grove - LCD RGB Backlight  [![Build Status](https://travis-ci.com/Seeed-Studio/Grove_LCD_RGB_Backlight.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Grove_LCD_RGB_Backlight)
 ---------------------------------------------------------
 
