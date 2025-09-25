@@ -12,10 +12,6 @@ In your main.c:
     rgb_lcd_set_cursor(&lcd, 0, 0);
     rgb_lcd_write_string(&lcd, "Hello STM32!");
     rgb_lcd_set_rgb(&lcd, 255, 0, 0); // Red backlight
-    
-Before we use this lcd, we should initialize it. You can use this function:
-
-    lcd.begin(16, 2);
 
 
 
