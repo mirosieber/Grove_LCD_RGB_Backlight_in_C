@@ -1,3 +1,22 @@
+### Example in C
+
+// In your main.c
+rgb_lcd_t lcd;
+I2C_HandleTypeDef hi2c1; // Your I2C handle
+
+// Initialize LCD
+rgb_lcd_init(&lcd, 16, 2, LCD_5x8DOTS, &hi2c1);
+
+// Use LCD functions
+rgb_lcd_set_cursor(&lcd, 0, 0);
+rgb_lcd_write_string(&lcd, "Hello STM32!");
+rgb_lcd_set_rgb(&lcd, 255, 0, 0); // Red backlight
+Before we use this lcd, we should initialize it. You can use this function:
+
+    lcd.begin(16, 2);
+
+
+
 Grove - LCD RGB Backlight  [![Build Status](https://travis-ci.com/Seeed-Studio/Grove_LCD_RGB_Backlight.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Grove_LCD_RGB_Backlight)
 ---------------------------------------------------------
 
